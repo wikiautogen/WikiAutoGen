@@ -113,7 +113,8 @@
 
 
     <section id="text-Antoine-Burban" class="section">
-      <h2>Antoine Burban (Text)</h2>
+        <h2 onclick="toggleContent('text-Antoine-Burban-content')" style="cursor: pointer;">Antoine Burban (Text)</h2>
+        <div id="text-Antoine-Burban-content" style="display: none;">
 
 
       <h3>Summary</h3>
@@ -261,7 +262,8 @@
 
 
     <section id="text-Durhamford-Manor" class="section">
-      <h2>Durhamford Manor (Text)</h2>
+      <h2 onclick="toggleContent('text-Durhamford-Manor-content')" style="cursor: pointer;">Durhamford Manor (Text)</h2>
+      <div id="text-Durhamford-Manor-content" style="display: none;">
       
       <h3>Summary</h3>
       <p>
@@ -424,7 +426,8 @@
 
 
     <section id="text-Fantu-Magiso" class="section">
-      <h2>Fantu Magiso (Text)</h2>
+      <h2 onclick="toggleContent('text-Fantu-Magiso-content')" style="cursor: pointer;">Fantu Magiso (Text)</h2>
+      <div id="text-Fantu-Magiso-content" style="display: none;">
       <h3>Summary</h3>
       <p>
         Fantu Magiso, born on October 9, 1992, in the Oromia region of Ethiopia, is a celebrated middle-distance runner known for her remarkable performances in the 800 meters. Her career is highlighted by a series of impressive achievements, most notably during the early 2010s, when she gained international acclaim. Magiso's outstanding speed and endurance have made her one of the fastest Ethiopian women in the history of the 800 meters, placing her among the elite middle-distance runners on the global stage [1][2].
@@ -576,7 +579,8 @@
 
 
     <section id="image-Antoine-Burban" class="section">
-      <h2>Antoine Burban (Image)</h2>
+      <h2 onclick="toggleContent('image-Antoine-Burban-content')" style="cursor: pointer;">Antoine Burban (Image)</h2>
+      <div id="image-Antoine-Burban-content" style="display: none;">
 
 
       <h3>Summary</h3>
@@ -736,7 +740,8 @@
 
 
     <section id="image-Durhamford-Manor" class="section">
-      <h2>Durhamford Manor (Image)</h2>
+      <h2 onclick="toggleContent('image-Durhamford-Manor-content')" style="cursor: pointer;">Durhamford Manor (Image)</h2>
+      <div id="image-Durhamford-Manor-content" style="display: none;">
       <h3>Summary</h3>
       <p>
         Durhamford Manor is a historical estate located in the parish of Westerham, Kent, England, renowned for its architectural and agricultural significance. A quintessential example of Tudor architecture, the manor embodies the region's historical richness, featuring notable design elements such as half-timbered structures and steeply pitched gable roofs. Constructed during the early 16th century, Durhamford Manor not only exemplifies the Tudor style but also reflects the socio-economic fabric of its era, with its expansive grounds serving as a hub for agricultural activities, particularly dairy farming.
@@ -879,7 +884,8 @@
 
  
     <section id="image-Fantu-Magiso" class="section">
-      <h2>Fantu Magiso (Image)</h2>
+      <h2 onclick="toggleContent('image-Fantu-Magiso-content')" style="cursor: pointer;">Fantu Magiso (Image)</h2>
+      <div id="image-Fantu-Magiso-content" style="display: none;">
       <h3>Summary</h3>
       <p>
         Fantu Magiso is a renowned Ethiopian middle-distance runner, specializing in the 800 meters. Born on June 9, 1992, in Hosaena, Ethiopia, Magiso has become a prominent figure in the world of athletics, known for her powerful strides and tactical prowess on the track.
@@ -1036,7 +1042,8 @@
 
 
     <section id="imagetext-Antoine-Burban" class="section">
-      <h2>Antoine Burban (Image-Text)</h2>
+      <h2 onclick="toggleContent('imagetext-Antoine-Burban-content')" style="cursor: pointer;">Antoine Burban (Image-Text)</h2>
+      <div id="imagetext-Antoine-Burban-content" style="display: none;">
 
 
       <h3>Summary</h3>
@@ -1214,7 +1221,10 @@
 
 
     <section id="imagetext-Durhamford-Manor" class="section">
-      <h2>Durhamford Manor (Image-Text)</h2>
+      <h2 onclick="toggleContent('imagetext-Durhamford-Manor-content')" style="cursor: pointer;">Durhamford Manor (Image-Text)</h2>
+      <div id="imagetext-Durhamford-Manor-content" style="display: none;">
+
+      
       <h3>Summary</h3>
       <p>
         Durhamford Manor is a historically significant manor house located in Suffolk, England, exemplifying the architectural grandeur of the Tudor period. Constructed in the late 16th century, the manor is an outstanding representation of the transition from medieval to early modern architectural styles. Commissioned by the influential Durham family, who were connected to the Tudor court, Durhamford Manor served as their primary residence and administrative center. Its architectural features, such as half-timbering, steeply pitched gable roofs, and elaborate chimneys, highlight the era's distinctive design vernacular, making it a notable study for architectural historians.[1][2]
@@ -1361,7 +1371,12 @@
     </section>
 
     <section id="imagetext-Fantu-Magiso" class="section">
-      <h2>Fantu Magiso (Image-Text)</h2>
+      <h2 onclick="toggleContent('imagetext-Fantu-Magiso-content')" style="cursor: pointer;">Fantu Magiso (Image-Text)</h2>
+      <div id="imagetext-Fantu-Magiso-content" style="display: none;">
+
+
+
+
       <h3>Summary</h3>
       <p>
         Fantu Magiso is a prominent Ethiopian middle-distance runner, renowned for her exceptional performance in the 800 meters event. Born on June 9, 1992, in Hosaena, located in Ethiopia's Southern Nations, Nationalities, and Peoples' Region, Magiso has become a significant figure in athletics, representing the legacy of Ethiopian excellence in distance running. Her career is distinguished by both national success and international acclaim, making her one of the top contenders in her discipline and a notable figure in the realm of track and field [1][2].
@@ -1523,6 +1538,18 @@
         <li><a href="https://sportsscientists.com/2007/06/the-ethiopian-running-dynasty/" target="_blank">[15] The Ethiopian running dynasty - The Science of Sport.</a></li>
       </ul>
     </section>
+
+
+    <script>
+        function toggleContent(id) {
+          var element = document.getElementById(id);
+          if (element.style.display === "none") {
+            element.style.display = "block";
+          } else {
+            element.style.display = "none";
+          }
+        }
+      </script>
 
   </body>
 </html> 
